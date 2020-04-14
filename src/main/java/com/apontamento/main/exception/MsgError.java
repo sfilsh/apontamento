@@ -1,4 +1,4 @@
-/*package com.apontamento.main.exception;
+package com.apontamento.main.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,4 +9,3 @@ public class MsgError {
     public String error;
 }
 
- */

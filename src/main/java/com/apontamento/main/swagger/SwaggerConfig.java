@@ -26,7 +26,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.ant("/apontamentos/**"))
                 .build()
-                /*.globalOperationParameters(
+                .globalOperationParameters(
                         Collections.singletonList(
                                 new ParameterBuilder()
                                         .name("Authorization")
@@ -35,7 +35,7 @@ public class SwaggerConfig {
                                         .parameterType("header")
                                         .required(false)
                                         .build())
-                )*/
+                )
                 .apiInfo(apiInfo());
     }
 
