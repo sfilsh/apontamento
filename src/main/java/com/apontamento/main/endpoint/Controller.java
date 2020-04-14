@@ -35,7 +35,7 @@ public class Controller {
     }
 
     //Get do Schedule
-    @GetMapping("/schedule")
+    @GetMapping("/apontamentos/schedule")
     @Secured({ "ROLE_ADMIN" })
     public ResponseEntity<Iterable<Schedule>> getSchedule() {
         return ResponseEntity.ok(services.getSchedule());
