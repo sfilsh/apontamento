@@ -36,6 +36,7 @@ public class Controller {
 
     //Get do Schedule
     @GetMapping("/schedule")
+    @Secured({ "ROLE_ADMIN" })
     public ResponseEntity<Iterable<Schedule>> getSchedule() {
         return ResponseEntity.ok(services.getSchedule());
     }
@@ -77,6 +78,7 @@ public class Controller {
 
     // Buscando pelo CPF
     @GetMapping("/cpf/{cpf}")
+    @Secured({ "ROLE_ADMIN" })
     public ResponseEntity getByCpf(@PathVariable("cpf") Long cpf) {
         Optional<Cadastro> cadastro = services.getCadastroCpf(cpf);
 
@@ -127,6 +129,7 @@ public class Controller {
 
     //Post do Schedule
     @PostMapping("/schedule")
+    @Secured({ "ROLE_ADMIN" })
     public ResponseEntity insertSchedule(@RequestBody Schedule schedule) {
 
         Schedule s = services.insertSchedule(schedule);
