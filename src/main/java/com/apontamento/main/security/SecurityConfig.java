@@ -43,6 +43,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         AuthenticationManager authManager = authenticationManager();
 
         http.cors();
+       /* http
+                .authorizeRequests()
+                .antMatchers(HttpMethod.GET, "/apontamentos/login").permitAll()
+                .antMatchers("/v2/api-docs", "/configuration/**", "/swagger*///**", "/webjars/**")
+                /*.permitAll()
+                .anyRequest().authenticated()
+                .and().csrf().disable()
+                .addFilter(new JwtAuthenticationFilter(authManager))
+                .addFilter(new JwtAuthorizationFilter(authManager, userDetailsService))
+                .exceptionHandling()
+                .accessDeniedHandler(accessDeniedHandler)
+                .authenticationEntryPoint(unauthorizedHandler)
+                .and()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+    }*/
         http
                 .authorizeRequests()
                 .anyRequest().authenticated()
