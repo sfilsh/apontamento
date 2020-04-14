@@ -1,4 +1,4 @@
-/*package com.apontamento.main.DTO;
+package com.apontamento.main.DTO;
 
 
 import com.apontamento.main.domain.Role;
@@ -46,4 +46,4 @@ public class UserDTO {
     }
 }
 
- */
+

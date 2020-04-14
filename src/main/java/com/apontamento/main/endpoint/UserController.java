@@ -1,4 +1,4 @@
-/*package com.apontamento.main.endpoint;
+package com.apontamento.main.endpoint;
 
 import com.apontamento.main.DTO.UserDTO;
 import com.apontamento.main.security.User;
@@ -32,4 +32,3 @@ public class UserController {
 }
 
 
- */
